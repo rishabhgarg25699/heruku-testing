@@ -1,9 +1,10 @@
 const express = require('express')
 const server = express();
-server.get('/', function (req, res) {
-    console.log("<h1><center> First server </h1></center>");
+var port = process.env.port || 3000;
 
+server.get('/', function (req, res) {
+    console.log("First server");
     res.send("<h1><center> First server </h1></center>")
 });
 
-server.listen(2000);
+server.listen(port);
