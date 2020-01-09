@@ -1,6 +1,6 @@
 const express = require('express')
 const server = express();
-var port = process.env.port || 3000;
+var port = process.env.PORT || 2000;
 
 server.get('/', function (req, res) {
     console.log("First server");
